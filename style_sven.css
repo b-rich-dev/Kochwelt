@@ -144,17 +144,15 @@ hr {
     border-style: inset;
     border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
-    box-sizing: border-box
+    box-sizing: border-box;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .tabel_top div {
     margin-right: 8px;
 }
 
-.tabel_top button {
-    margin-left: -10px;
-
-}
 
 .ingredients {
     width: 100%;
