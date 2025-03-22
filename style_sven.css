@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* test */
 
 h1 {
@@ -19,10 +20,19 @@ h2 {
 
 .recipe_of_the_day {
     display: flex;
+=======
+.recipe_of_the_day {
+    display: flex;
+
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
     width: 80%;
     height: 30vh;
     padding-top: 80px;
     padding-bottom: 80px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -31,8 +41,17 @@ h2 {
     border-radius: 16px;
 }
 
+<<<<<<< HEAD
 .recipe_of_the_day_img img {
     height: 100%;
+=======
+
+.recipe_of_the_day_img img {
+
+    height: 100%;
+
+
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
 }
 
 .recipe_of_the_day_text {
@@ -48,10 +67,21 @@ h2 {
 .recipe_of_the_day_text_titel {
     font-size: 24px;
     font-weight: 600;
+<<<<<<< HEAD
     padding-bottom: 8px;
 }
 
 .recipe_of_the_day_text_subtext {
+=======
+
+
+    padding-bottom: 8px;
+
+}
+
+.recipe_of_the_day_text_subtext {
+
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
     font-weight: 300;
 }
 
@@ -59,6 +89,7 @@ h2 {
     color: white;
     font-size: 16px;
     background-color: #008000;
+<<<<<<< HEAD
 
     width: 240px;
     border: none;
@@ -209,6 +240,12 @@ hr {
     width: 80px;
     border-radius: 40px;
     margin-right: 40px;
+=======
+    padding: 12px;
+    width: 240px;
+    border: none;
+
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
 
 }
 
@@ -218,12 +255,18 @@ hr {
 
     .recipe_of_the_day {
         display: flex;
+<<<<<<< HEAD
         flex-direction: column;
 
+=======
+    flex-direction: column;
+       
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
     }
 
     .recipe_of_the_day_text {
         text-align: center;
+<<<<<<< HEAD
 
         align-items: center;
         padding-left: 0px;
@@ -285,6 +328,22 @@ width: 100%;
     h2 {
         text-align: center;
     }
+=======
+       
+        align-items: center;
+        padding-left: 0px;
+    }
+    .recipe_of_the_day_text_titel
+    {
+        padding-top: 8px;
+    }
+    .recipe_of_the_day_text_subtext{
+        padding-top: 8px;
+        padding-bottom: 16px;
+    }
+
+
+>>>>>>> d6f5ac968bdde0f1b65b9e9c4cced2e666eb6a17
 
 
 
