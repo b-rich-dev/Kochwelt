@@ -176,6 +176,11 @@ hr {
     flex-direction: row;
     padding-right: 4px;
 }
+.ingredients var {
+    display: flex;
+    flex-direction: row;
+    padding-right: 4px;
+}
 
 .ingredients p:nth-child(odd) {
     padding-left: 24px;
