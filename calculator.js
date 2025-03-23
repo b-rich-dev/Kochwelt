@@ -6,16 +6,11 @@ let b = a.getElementsByTagName("p").length;                         // Zählt al
 let ingredient_count = b / 2;                                       // Teilt durch 2, da jede Zutat aus 2 <p> besteht (Menge + Name)
 
 
-
-
-
 for (let i = 1; i <= ingredient_count; i++) {                       //Wiederholt alles in der geschwungenen klammer so oft bi i <= ingredient_count ist
     element = document.getElementById("ingredient_" + i);           // Hole die Zutatenmänge aller 12 zutaten nacheinander 
     object["x" + i] = element                                       // lege den wert von element im objekt "objekt" als x1 beim der ersten wiederholung, als x2 bei der zweiten, usw...
     originalValues["x" + i] = parseFloat(element.innerText)         // speichert den ursprünglichen zahlenwert als float (zum rechnen) im objekt originalValues als x1 beim der ersten wiederholung, als x2 bei der zweiten, usw...
 }
-
-
 
 
 function claculate_ingredient() {                                   //führt funktion claculator für zutat 1-12 aus   diese funktion wird in html beim input als onChange ausgeführt
@@ -28,11 +23,6 @@ function claculate_ingredient() {                                   //führt fun
         calculator(i)                                               //wird ausgeführt mit dem parameter 1 beim ersten mal 2 beim zweiten usw...
     }
 }
-
-
-
-
-
 
 
 function calculator(y) {                                                    //ändert den wert der zutaten anhand der portionen der parameter y eintscheidet in welcher spalte dies durchgeführt wird
