@@ -10,10 +10,6 @@
   filter: invert(1);
 }
 
-.hut-img {
-  height: 80px;
-}
-
 body {
   margin: 0px;
 }
@@ -48,23 +44,12 @@ footer {
   .kochwelt-img {
     content: url(./img/logo_small.png);
     filter: invert();
-    width: 80px;
+    width: 48px;
   }
-
-  .hut-img {
-    display: flex;
-    justify-content: flex-start;
-    filter: invert(1);
-    height: 80px;
-  }
-
 
 }
 
 @media (max-width: 400px){
-  .kochwelt-img {
-    width: 64px;
-  }
 
   .social-media {
     gap: 12px;
