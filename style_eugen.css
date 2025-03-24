@@ -163,3 +163,41 @@ body {
     align-items: center;
     gap: 24px;
 }
+
+@media(max-width: 640px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_ingredients {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator{
+        padding-top: 16px;
+        margin-bottom: 16px;
+    }
+    .p_grey{
+        grid-template-columns: 50% 50%;
+    }
+
+    .p_white{
+        grid-template-columns: 50% 50%;
+    }
+
+    .preparation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil_container{
+        flex-direction: column;
+        gap: 0;
+    }
+}
