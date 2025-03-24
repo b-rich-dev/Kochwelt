@@ -42,7 +42,7 @@ footer {
   }
 
   .kochwelt-img {
-    content: url(./img/logo_small.png);
+    content: url(../img/logo_small.png);
     filter: invert();
     width: 48px;
   }
