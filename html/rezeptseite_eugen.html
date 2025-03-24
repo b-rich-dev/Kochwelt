@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../styles/fonts.css" />
     <link rel="stylesheet" href="../styles/style_footer.css" />
     <link rel="stylesheet" href="../styles/style_header.css" />
-    <link rel="stylesheet" href="../header_script.js" />
     <script src="../header_script.js"></script>
 </head>
 
@@ -49,65 +48,72 @@
             </div>
         </section>
         <section class="third_section">
-            <div class="container_ingredients">
+            <div id="ingredients_id" class="container_ingredients">
                 <div class="calculator">
                     <p>Zutaten für</p>
                     <div class="inputandbutton">
-                        <input class="input" type="number" min="0" max="20" placeholder="1">
-                        <button class="button">Portionen</button>
+                        <input onchange="claculate_ingredient()" id="Portion_number" class="input" type="number" min="0"
+                            max="20" placeholder="1">
+                        <button onclick="claculate_ingredient()" class="button">Portionen</button>
                     </div>
                 </div>
-                <div class="p_grey">
-                    <div>1 große/s</div>
-                    <p>Bürgerbrötchen</p>
-                </div>
-                <div class="p_white">
-                    <div>200g</div>
-                    <p>Rinderhackfleisch</p>
-                </div>
-                <div class="p_grey">
-                    <div>2 Scheiben</div>
-                    <p>Bacon</p>
-                </div>
-                <div class="p_white">
-                    <div>1 Scheibe/n</div>
-                    <p>Cheddarkäse</p>
-                </div>
-                <div class="p_grey">
-                    <div>1 m.-große</div>
-                    <p>Zwiebel</p>
-                </div>
-                <div class="p_white">
-                    <div>2 Scheiben</div>
-                    <p>Tomaten</p>
-                </div>
-                <div class="p_grey">
-                    <div>2 Blätter</div>
-                    <p>Salat (Lollo Bionda)</p>
-                </div>
-                <div class="p_white">
-                    <div></div>
-                    <p>Meersalz</p>
-                </div>
-                <div class="p_grey">
-                    <div></div>
-                    <p>Schwarzer Pfeffer</p>
-                </div>
-                <div class="p_white">
-                    <div></div>
-                    <p>BBQ-Soße, rauchig</p>
-                </div>
-                <div class="p_grey">
-                    <div></div>
-                    <p>Sonnenblumenöl</p>
-                </div>
-                <div class="p_white">
-                    <div>evtl.</div>
-                    <p>Butterschmalz</p>
-                </div>
-                <div class="p_grey">
-                    <div>evtl</div>
-                    <p>Flüssigrauch</p>
+                <div id="ingredients_id" class="ingredients">
+                    <div class="p_grey">
+                        <div>
+                            <p id="ingredient_1">1</p>
+                            <p>große/s</p>
+                        </div>
+                        <p>Bürgerbrötchen</p>
+                    </div>
+                    <div class="p_white">
+                        <p id="ingredient_2">200</p>
+                        <p>g</p>
+                        <p>Rinderhackfleisch</p>
+                    </div>
+                    <div class="p_grey">
+                        <div>2 Scheiben</div>
+                        <p>Bacon</p>
+                    </div>
+                    <div class="p_white">
+                        <div>1 Scheibe/n</div>
+                        <p>Cheddarkäse</p>
+                    </div>
+                    <div class="p_grey">
+                        <div>1 m.-große</div>
+                        <p>Zwiebel</p>
+                    </div>
+                    <div class="p_white">
+                        <div>2 Scheiben</div>
+                        <p>Tomaten</p>
+                    </div>
+                    <div class="p_grey">
+                        <div>2 Blätter</div>
+                        <p>Salat (Lollo Bionda)</p>
+                    </div>
+                    <div class="p_white">
+                        <div></div>
+                        <p>Meersalz</p>
+                    </div>
+                    <div class="p_grey">
+                        <div></div>
+                        <p>Schwarzer Pfeffer</p>
+                    </div>
+                    <div class="p_white">
+                        <div></div>
+                        <p>BBQ-Soße, rauchig</p>
+                    </div>
+                    <div class="p_grey">
+                        <div></div>
+                        <p>Sonnenblumenöl</p>
+                    </div>
+                    <div class="p_white">
+                        <div>evtl.</div>
+                        <p>Butterschmalz</p>
+                    </div>
+                    <div class="p_grey">
+                        <div>evtl</div>
+                        <p>Flüssigrauch</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,5 +169,6 @@
     </div>
     </div>
 </body>
+<script src="../calculator.js"></script>
 
 </html>
