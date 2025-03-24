@@ -130,7 +130,7 @@ header button {
 @media(max-width: 540px) {
 
     header .logo {
-        content: url(./img/logo_small.png);
+        content: url(../img/logo_small.png);
         max-width: 42px;
         max-height: 42px;
         object-fit: contain;
