@@ -134,6 +134,7 @@ header a {
     background-color: green;
     color: white;
     border-width: 0px;
+    cursor: pointer;
 }
 
 .p_grey {
