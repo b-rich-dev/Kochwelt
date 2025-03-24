@@ -2,8 +2,8 @@ const object = {};
 const originalValues = {};
 
 let a = document.getElementById("ingredients_id");                  // Zugriff auf das <div>, das die Zutatenliste enthält
-let b = a.getElementsByTagName("p").length;                         // Zählt alle <p>-Elemente im Zutaten-Container
-let ingredient_count = b / 3;                                       // Teilt durch 3, da jede Zutat aus 3 <p> besteht (Menge + einheit + Name)
+let ingredient_count = a.getElementsByTagName("div").length;        // Zählt alle div-Elemente im Zutaten-Container, sprich alle zeilen der Zutatenliste
+                           
 
 
 for (let i = 1; i <= ingredient_count; i++) {                       //Wiederholt alles in der geschwungenen klammer so oft bi i <= ingredient_count ist
