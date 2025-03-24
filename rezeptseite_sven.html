@@ -27,8 +27,8 @@
     </section>
     <section>
         <div class="my_recipe">
-            <h1 id="test">Rezept Titel</h1>
-            <img class=" my_recipe_atf_img img_round_border" src="img/salad.jpg" alt="Ein Bild vom Grichischem Salat">
+            <h1 id="test">Chili con Carne</h1>
+            <img class=" my_recipe_atf_img img_round_border" src="img\chilli_sven.jpg" alt="Ein Bild vom Grichischem Salat">
             <div class="my_recipe_tag">
                 <div><img src="img/icons/clock-regular.svg" alt=""> 15 Min</div>
 
@@ -41,59 +41,108 @@
 
             <div class="tabel_top">
                 <div>Zutaten für:</div>
-                <input onchange="claculate_ingredient()" type="number"  id="Portion_number" min="1" max="30" value="4">
+                <input onchange="claculate_ingredient()" type="number" id="Portion_number" min="1" max="30" value="4">
                 <button onclick="claculate_ingredient()" class="button">Portionen</button>
 
 
             </div>
-            <div id="ingredients_id" class="ingredients">
+            <div id="ingredients_id" class="ingredients">  <!--immer den ganzen div benutzen für eine zutat ausser es ist keine mänge angegeben dann nur ein p element -->
                 <div>
-                    <p id="ingredient_1"  >115</p>
-                    <p>Zutat</p>
+                    <p id="ingredient_1">500</p>
+                    <p>
+                        g
+                    </p>
+                    <p>Rinderhackfleisch</p>
                 </div>
                 <div>
-                    <p id="ingredient_2">10</p>
-                    <p>zutat xx</p>
+                    <p id="ingredient_2">240</p>
+                    <p>
+                        g
+                    </p>
+                    <p>Kidneybohnen </p>
                 </div>
                 <div>
-                    <p id="ingredient_3">50</p>
-                    <p>Zutat</p>
+                    <p id="ingredient_3">140</p>
+                    <p>
+                        g
+                    </p>
+                    <p>Mais </p>
                 </div>
                 <div>
-                    <p id="ingredient_4">100</p>
-                    <p>zutat xx</p>
+                    <p id="ingredient_4">1</p>
+                    <p>
+                        
+                    </p>
+                    <p>Zwiebel</p>
                 </div>
                 <div>
-                    <p id="ingredient_5">78</p>
-                    <p>Zutat</p>
+                    <p id="ingredient_5">2 </p>
+                    <p>
+                        
+                    </p>
+                    <p>Knoblauchzehen</p>
                 </div>
                 <div>
-                    <p id="ingredient_6">3</p>
-                    <p>zutat xx</p>
+                    <p id="ingredient_6">1 </p>
+                    <p>
+                        
+                    </p>
+
+                    <p>rote Paprika</p>
                 </div>
                 <div>
-                    <p id="ingredient_7">45</p>
-                    <p>Zutat</p>
+                    <p id="ingredient_7">2 </p>
+                    <p>
+                        EL
+                    </p>
+
+                    <p>Tomatenmark</p>
                 </div>
                 <div>
-                    <p id="ingredient_8">6</p>
-                    <p>zutat xx</p>
+                    <p id="ingredient_8">400</p>
+                    <p>
+                        g
+                    </p>
+
+                    <p>gehackte Tomaten</p>
                 </div>
                 <div>
-                    <p id="ingredient_9">7</p>
-                    <p>Zutat</p>
+                    <p id="ingredient_9">250 </p>
+                    <p>
+                        ml
+                    </p>
+
+                    <p>Gemüsebrühe</p>
                 </div>
                 <div>
-                    <p id="ingredient_10">8</p>
-                    <p>zutat xx</p>
+                    <p id="ingredient_10">1</p>
+                    <p>
+                        TL
+                    </p>
+
+                    <p>Paprikapulver </p>
                 </div>
                 <div>
-                    <p id="ingredient_11">5</p>
-                    <p>Zutat</p>
+                    <p id="ingredient_11">0.5</p>
+                    <p>
+                        TL
+                    </p>
+
+                    <p>Kreuzkümmel</p>
                 </div>
                 <div>
-                    <p id="ingredient_12">11</p>
-                    <p>zutat xx</p>
+                    <p id="ingredient_12">1</p>
+                    <p>
+                        TL
+                    </p>
+
+                    <p>frische Chili</p>
+                </div>
+                <div>
+                    <p>Salz & Pfeffer</p>
+                </div>
+                <div>
+                    <p>Öl zum Anbraten</p>
                 </div>
 
             </div>
@@ -110,14 +159,25 @@
                         gesamtzeit ca 15 Min.
                     </div>
                 </div>
-                <div class="preparation_text">Gurke waschen und ungeschalt in dünne Scheiben oder Stucke schnercen
-                    Papoka waschen, entkernen und in
-                    dünne Streifen schneiden. Tomaten waschen und achtein Zwiebeln schälen und in feine Ringe schneiden.
-                    Schafskäse würfein und mit Omegano bestreuen. Oliven abgleiten und mit Gurke, Paprika lomaten,
-                    Awegein
-                    und Schatskase in eine Schussel geben. Ovenől Zitronensaft. Salz und Pfeffer zu einer Sauce
-                    verrünren
-                    und uber den Salat gießen. Umrühren </div>
+                <div class="preparation_text">Zwiebel, Knoblauch und Paprika klein schneiden.  <br><br>
+
+                    1. In einem großen Topf etwas Öl erhitzen. Zwiebeln und Knoblauch glasig dünsten.<br><br>
+                    
+                    2. Das Hackfleisch dazugeben und scharf anbraten, bis es krümelig ist.<br><br>
+                    
+                    3. Paprika und Tomatenmark kurz mitbraten.<br><br>
+                    
+                    4. Gewürze (Paprikapulver, Kreuzkümmel, Chili) hinzufügen und verrühren.<br><br>
+                    
+                    5. Gehackte Tomaten und Brühe dazugießen, gut umrühren.<br><br>
+                    
+                    6. Bei mittlerer Hitze ca. 20 Minuten köcheln lassen.<br><br>
+                    
+                    7. Dann Kidneybohnen und Mais abtropfen und hinzufügen. Nochmals 10 Minuten köcheln lassen.<br><br>
+                    
+                    8. Mit Salz, Pfeffer und ggf. mehr Chili abschmecken. </div>
+
+
                 <div class="creator">Rezept erstellt von </div>
                 <div class="recipe_signature">
                     <img src="img/profile.png" alt="">
@@ -135,4 +195,5 @@
 
 </body>
 <script src="calculator.js"></script>
+
 </html>

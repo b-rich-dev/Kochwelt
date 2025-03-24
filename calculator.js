@@ -3,7 +3,7 @@ const originalValues = {};
 
 let a = document.getElementById("ingredients_id");                  // Zugriff auf das <div>, das die Zutatenliste enthält
 let b = a.getElementsByTagName("p").length;                         // Zählt alle <p>-Elemente im Zutaten-Container
-let ingredient_count = b / 2;                                       // Teilt durch 2, da jede Zutat aus 2 <p> besteht (Menge + Name)
+let ingredient_count = b / 3;                                       // Teilt durch 3, da jede Zutat aus 3 <p> besteht (Menge + einheit + Name)
 
 
 for (let i = 1; i <= ingredient_count; i++) {                       //Wiederholt alles in der geschwungenen klammer so oft bi i <= ingredient_count ist
@@ -29,7 +29,7 @@ function calculator(y) {                                                    //ä
     let Portion_number = document.getElementById('Portion_number').value;   //holt das Value der portionen
 
 
-    let result = originalValues["x" + y] * Portion_number;                  //rechnet das originalValue[x1-12] mal Portion_Number
+    let result = originalValues["x" + y] * Portion_number / 4;                  //rechnet das originalValue[x1-12] mal Portion_Number dur 4 da die orignalzutatenmäne schon für 4 portionen eingetragen wurden
     result = parseFloat(result.toFixed(2));                                 // Rundet das ergebniss auf 2 stellen hinter dem komma
     console.log(result);    
 
@@ -41,7 +41,7 @@ function calculator(y) {                                                    //ä
 }
 
 
-claculate_ingredient()                                                      //sorgt dafür das wenn die seite geladen wird alle zutaten einmal ausgerechnet werden
+/* claculate_ingredient()    */                                                   //sorgt dafür das wenn die seite geladen wird alle zutaten einmal ausgerechnet werden
 
 
 
