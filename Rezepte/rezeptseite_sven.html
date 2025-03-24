@@ -199,22 +199,17 @@
 
 
     </section>
-    <footer>
-        <div class="footer_container">
-            <div class="kochwelt-img">
-                <img class="rth-img" src="../img/logo.png">
-            </div>
 
-            <div class="social-media">
-                <a href="https://www.facebook.de" target="_blank"><img class="ser-img"
-                        src="../img/facebook_logo.png"></a>
-                <a href="https://www.instagram.de" target="_blank"><img class="ser-img"
-                        src="../img/instagram_logo.png"></a>
-                <a href="https://www.tripadvisor.de" target="_blank"><img class="ser-img"
-                        src="../img/tripadvisor_logo.png"></a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+        // Footer laden und einfügen
+        fetch('./footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+      </script>
 
 
 

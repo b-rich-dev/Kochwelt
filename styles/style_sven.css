@@ -241,7 +241,7 @@ hr {
     .recipe_of_the_day {
         display: flex;
         flex-direction: column;
-        height: 0;
+        
 
     }
 
