@@ -186,6 +186,7 @@ h2 {
   display: flex;
   padding-top: 24px;
   padding-bottom: 48px;
+  align-items: center;
 }
 
 .explanation img {
