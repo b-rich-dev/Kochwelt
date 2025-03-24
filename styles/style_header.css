@@ -89,19 +89,25 @@ header button {
         background-color: #E3E3E3;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         width: 180px;
-        height: 117px;
+        /* height: 117px; */
 
         position: absolute;
         top: 75px;
         right: 0;
 
         transition: all 250ms ease-in-out;
+        padding-bottom: 8px;
     }
+
+    
+
 
     .resp_menu_box button {
         width: 100%;
+        margin-bottom: 8px;
     }
 
     .resp_menu_box a {
@@ -110,6 +116,7 @@ header button {
         font-weight: 500;
         text-decoration: none;
         color: black;
+        padding-bottom: 4px;
     }
 
     .resp_menu_box a:hover {
@@ -118,9 +125,6 @@ header button {
         text-decoration-thickness: 4px;
     }
 
-    .resp_menu_box button {
-        margin-bottom: 12px;
-    }
 
     .resp_menu_closed {
         transform: translateX(100%);

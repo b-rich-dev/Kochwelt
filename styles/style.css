@@ -1,3 +1,10 @@
+
+a{
+  color: black;
+ text-decoration:  none;
+
+}
+
 html {
   scroll-behavior: smooth;
   font-family: raleway;
@@ -57,7 +64,7 @@ header a {
 .recipe_of_the_day {
   display: flex;
   width: 80%;
-  height: 30vh;
+  
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 10%;
@@ -68,8 +75,12 @@ header a {
   border-radius: 16px;
 }
 
-.recipe_of_the_day_img img {
-  height: 100%;
+.recipe_of_the_day_img {
+ 
+ width: 50%;
+ aspect-ratio: 16/9;
+ object-fit: cover;
+
 }
 
 .recipe_of_the_day_text {
@@ -155,6 +166,7 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .wok {
@@ -174,6 +186,7 @@ h2 {
   display: flex;
   padding-top: 24px;
   padding-bottom: 48px;
+  align-items: center;
 }
 
 .explanation img {
@@ -260,26 +273,27 @@ footer {
 
 
   .recipe_of_the_day {
-      display: flex;
-      flex-direction: column;
-height: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .recipe_of_the_day img{
+  width: 100%;
   }
 
   .recipe_of_the_day_text {
-      text-align: center;
+    text-align: center;
 
-      align-items: center;
-      padding-left: 0px;
+    align-items: center;
+    padding-left: 0px;
   }
 
   .recipe_of_the_day_text_titel {
-      padding-top: 8px;
+    padding-top: 8px;
   }
 
   .recipe_of_the_day_text_subtext {
-      padding-top: 8px;
-      padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 16px;
   }
 }
-
-
