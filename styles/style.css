@@ -262,7 +262,7 @@ footer {
   .recipe_of_the_day {
       display: flex;
       flex-direction: column;
-
+height: auto;
   }
 
   .recipe_of_the_day_text {
