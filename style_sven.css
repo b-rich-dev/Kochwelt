@@ -17,6 +17,17 @@ h2 {
     margin-bottom: 24px;
 }
 
+.impressum{
+    
+    width: 80%;
+    
+   
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
 .recipe_of_the_day {
     display: flex;
     width: 80%;
@@ -165,6 +176,7 @@ hr {
     background-color: #EFEFEF;
     width: 100%;
     border-radius: 8px;
+    line-break: anywhere;
 }
 
 .ingredients div:nth-child(even) {
@@ -184,6 +196,9 @@ hr {
 
 .ingredients p:nth-child(odd) {
     padding-left: 24px;
+}
+.ingredients p:nth-child(3n) {
+    padding-left: 0px;
 }
 
 .preparation_text {
@@ -207,7 +222,7 @@ hr {
     font-size: 24px;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .recipe_signature img {
@@ -264,6 +279,8 @@ hr {
 
     .tabel_top input {
         width: 240px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     .my_recipe_tag {
