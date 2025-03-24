@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/style_header.css" />
     <link rel="stylesheet" href="../styles/style_footer.css">
-    <link rel="stylesheet" href="../http://127.0.0.1:5500/style.css?_cacheOverride=1742726698614">   <!-- was ist das? (lg sven) -->
+    <link rel="stylesheet" href="../http://127.0.0.1:5500/style.css?_cacheOverride=1742726698614">
+    <!-- was ist das? (lg sven) -->
     <link rel="preconnect" href="\https://fonts.googleapis.com">
-    <link rel="preconnect" href="\https://fonts.gstatic.com" crossorigin>                           <!-- und das? -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap&amp;_cacheOverride=1742726698617" rel="stylesheet">  <!-- und das? -->
+    <link rel="preconnect" href="\https://fonts.gstatic.com" crossorigin> <!-- und das? -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap&amp;_cacheOverride=1742726698617"
+        rel="stylesheet"> <!-- und das? -->
 
     <script src="./header_script.js"></script>
 
@@ -25,51 +28,55 @@
     <script>
         // header laden und einfügen
         fetch('./header.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('header').innerHTML = data;
-          });
-      </script>
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
     <section>
         <div class="recipe_of_the_day">
-            <img class="recipe_of_the_day_img img_round_border" src="../img/croissant.jpg" alt="Ein Bild von Croissant's">
+            <img class="recipe_of_the_day_img img_round_border" src="../img/chilli_sven.jpg"
+                alt="Ein Bild von Croissant's">
             <div class="recipe_of_the_day_text">
                 <div>
-                    <div class="recipe_of_the_day_text_titel">Französische Croissants</div>
-                    <div class="recipe_of_the_day_text_subtext">Schmackhafte Croissants können auch zu Hause sehr
-                        einfach
-                        gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.</div>
-                </div><button class="button">Rezept öffnen</button>
-            </div>
+                    <div class="recipe_of_the_day_text_titel">Chili con Carne</div>
+                    <div class="recipe_of_the_day_text_subtext">Das Chili con Carne überzeugt mit seinem würzigen,
+                        herzhaften Geschmack und der perfekten Balance aus Schärfe und Tiefe. Die Kombination aus zartem
+                        Hackfleisch, aromatischen Gewürzen und sättigenden Bohnen macht es zu einem echten Soulfood. Es
+                        ist einfach zuzubereiten, vielseitig abwandelbar und schmeckt am nächsten Tag fast noch besser!
+                    </div>
+                <a href="./rezeptseite_sven.html"></div><button class="button">Rezept öffnen</button>
+                </a>
+                </div>
         </div>
     </section>
     <section id="secondpart">
         <h1>Lust auf was Neues?</h1>
         <div class="fourimg">
-          <a href="">
-            <div class="imgtxt">
-            <img class="image" src="../img/Croquetas.jpg" />
-            <h2>Croquetas de Jamon</h2>
-          </div>
-        </a>
-         <a href="./rezeptseite_eugen.html">
-             <div class="imgtxt">
-            <img class="image" src="../img/burger.png" />
-            <h2>Burger</h2>
-          </div>
-        </a>
-        <a href="">
-          <div class="imgtxt">
-            <img class="image" src="../img/carbonarahappy.jpg" />
-            <h2>Carbonara</h2>
-          </div>
-        </a>
-        <a href="./rezeptseite_sven.html">
-          <div class="imgtxt">
-            <img class="image" src="../img\chilli_sven.jpg" />
-            <h2>Chili con Carne</h2>
-          </div>
-        </a>
+            <a href="">
+                <div class="imgtxt">
+                    <img class="image" src="../img/Croquetas.jpg" />
+                    <h2>Croquetas de Jamon</h2>
+                </div>
+            </a>
+            <a href="./rezeptseite_eugen.html">
+                <div class="imgtxt">
+                    <img class="image" src="../img/burger.png" />
+                    <h2>Burger</h2>
+                </div>
+            </a>
+            <a href="">
+                <div class="imgtxt">
+                    <img class="image" src="../img/carbonarahappy.jpg" />
+                    <h2>Carbonara</h2>
+                </div>
+            </a>
+            <a href="./rezeptseite_sven.html">
+                <div class="imgtxt">
+                    <img class="image" src="../img\chilli_sven.jpg" />
+                    <h2>Chili con Carne</h2>
+                </div>
+            </a>
         </div>
     </section>
     <section class="wok">

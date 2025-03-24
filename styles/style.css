@@ -64,7 +64,7 @@ header a {
 .recipe_of_the_day {
   display: flex;
   width: 80%;
-  height: 30vh;
+  
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 10%;
@@ -75,8 +75,12 @@ header a {
   border-radius: 16px;
 }
 
-.recipe_of_the_day_img img {
-  height: 100%;
+.recipe_of_the_day_img {
+ 
+ width: 50%;
+ aspect-ratio: 16/9;
+ object-fit: cover;
+
 }
 
 .recipe_of_the_day_text {
@@ -271,6 +275,9 @@ footer {
     display: flex;
     flex-direction: column;
     height: auto;
+  }
+  .recipe_of_the_day img{
+  width: 100%;
   }
 
   .recipe_of_the_day_text {
