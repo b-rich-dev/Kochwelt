@@ -17,11 +17,11 @@ h2 {
     margin-bottom: 24px;
 }
 
-.impressum{
-    
+.impressum {
+
     width: 80%;
-    
-   
+
+
     padding-bottom: 80px;
     padding-left: 10%;
     padding-right: 10%;
@@ -188,6 +188,7 @@ hr {
     flex-direction: row;
     padding-right: 4px;
 }
+
 .ingredients var {
     display: flex;
     flex-direction: row;
@@ -197,6 +198,7 @@ hr {
 .ingredients p:nth-child(odd) {
     padding-left: 24px;
 }
+
 .ingredients p:nth-child(3n) {
     padding-left: 0px;
 }
@@ -299,9 +301,9 @@ hr {
         margin-bottom: 0;
     }
 
-   #test {
+    #test {
         text-align: center;
-width: 100%;
+        width: 100%;
     }
 
     h2 {
