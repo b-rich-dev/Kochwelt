@@ -97,6 +97,10 @@ body {
     cursor: pointer;
 }
 
+.distance {
+    padding-left: 4px;
+}
+
 .p_grey {
     text-align: center;
     justify-content: center;
@@ -240,12 +244,15 @@ body {
     .p_grey {
         grid-template-columns: 40% 60%;
     }
+
     .p_grey div {
         padding-right: 6px;
     }
+
     .p_white {
         grid-template-columns: 40% 60%;
     }
+
     .p_white div {
         padding-right: 6px;
     }
