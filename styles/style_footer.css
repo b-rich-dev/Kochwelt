@@ -48,7 +48,7 @@ body {
 }
 
 .da_im{
-  height: 200px;
+bottom: 32px;
   width: 80%;
   display: flex;
   flex-direction: row;
