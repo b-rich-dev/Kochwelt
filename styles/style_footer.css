@@ -29,10 +29,26 @@ footer {
 
 .social-media {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
   object-fit: cover;
+}
+
+.da_im{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.da_im a{
+  color: white;
+  text-decoration: none;
+}
+
+.da_im a:hover{
+  color: green;
 }
 
 @media (max-width: 620px) {
