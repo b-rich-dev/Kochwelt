@@ -1,3 +1,15 @@
+function validateInput() {
+    let inputField = document.getElementById("input");
+    let value = parseInt(inputField.value);
+
+    // Falls der Wert nicht innerhalb des erlaubten Bereichs liegt, korrigieren
+    if (isNaN(value) || value < 0) {
+        inputField.value = 0;
+    } else if (value > 20) {
+        inputField.value = 20;
+    }
+}
+
 
 function calculate() {
     let inputNumber = parseFloat(document.getElementById("input").value) || 1; // Standardwert 1

@@ -44,7 +44,7 @@ body {
     height: 24px;
     padding-left: 8px;
     padding-right: 8px;
-    background-color: #E3E3E3;
+    background-color: #EFEFEF;
     border-radius: 8px;
     gap: 8px;
 }
@@ -81,7 +81,7 @@ body {
     height: 24px;
     width: 120px;
     border-width: 1px;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #EFEFEF;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-right-radius: 0;
@@ -104,7 +104,7 @@ body {
 .p_grey {
     text-align: center;
     justify-content: center;
-    background-color: #E3E3E3;
+    background-color: #EFEFEF;
     border-radius: 6px;
     display: grid;
     grid-template-columns: 30% 70%;

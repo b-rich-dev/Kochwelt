@@ -52,7 +52,7 @@
             <div class="calculator">
                 <p>Zutaten für</p>
                 <div class="inputandbutton">
-                    <input onchange="calculate()" id="input" class="input" type="number" min="0" max="20"
+                    <input onchange="validateInput(); calculate()" id="input" class="input" type="number" min="0" max="20"
                         placeholder="1">
                     <button onclick="calculate()" class="button">Portionen</button>
                 </div>
