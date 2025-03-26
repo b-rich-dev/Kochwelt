@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktseite</title>
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
-    <link rel="stylesheet" href="contact.css" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <script src="contactemail.js"></script>
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style_sven.css" />
+    <link rel="stylesheet" href="../styles/style_footer.css" />
+    <script src="../contactemail.js"></script>
+    <script src="../header_script.js"></script>
+   
+
 </head>
-<body>
+<body class="content">
+    <div id="header"></div>
+
+    <script>
+        // header laden und einfügen
+        fetch('./header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header').innerHTML = data;
+          });
+      </script>
     <section class="centermid">
         <div class="p_grey">
             <h2 class="contact">Kontaktiere uns</h2>
@@ -17,7 +34,7 @@
                 <form onsubmit="sendMail(event)" class="allbox">
                     <label class="box_lineup">
                         Deine Name:
-                        <input type="text" name="text" required>
+                        <input type="text" name="text">
                     </label>
                     <label class="box_lineup">
                         Deine Email:
@@ -25,7 +42,7 @@
                     </label>
                     <label class="lastbox">
                         Deine Nachricht:
-                        <textarea type="text" Nachricht="text" required></textarea>
+                        <textarea type="message"></textarea>
                     </label>
                     <div class="green">
                         <button type="Abschicken">Abschicken</button>
@@ -34,5 +51,17 @@
             </div>            
         </div>
     </section>
+
+
+    <div id="footer"></div>
+
+    <script>
+        // Footer laden und einfügen
+        fetch('./footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+      </script>
 </body>
 </html>
