@@ -31,7 +31,7 @@ body {
 .burger_img {
     height: 200px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 16px;
     object-fit: cover;
     margin-bottom: 24px;
 }
@@ -75,13 +75,16 @@ body {
 
 .inputandbutton {
     display: flex;
+    align-items: center;
+    padding-top: 22px;
+    margin-bottom: 22px;
 }
 
 .input {
-    height: 24px;
+    height: 38px;
     width: 120px;
     border-width: 1px;
-    border: 1px solid #EFEFEF;
+    border: 1px solid black;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-right-radius: 0;
@@ -89,8 +92,8 @@ body {
 }
 
 .button {
-    height: 28px;
-    width: 120px;
+    height: 42px;
+    width: 240px;
     background-color: green;
     color: white;
     border-width: 0px;
@@ -187,10 +190,27 @@ body {
     }
 
     .calculator {
-        padding-top: 16px;
-        margin-bottom: 16px;
+        /* padding-top: 16px; */
+        margin-bottom: 10px;
+        flex-direction: column;
     }
-
+    
+    .calculator p {
+        padding-right: 0;
+        padding-top: 3px;
+    }
+    
+    .inputandbutton {
+        flex-direction: column;
+        padding-top: 0;
+        gap: 16px;
+    }
+    
+    .input {
+        width: 234px;
+        border-radius: 6px;
+    }
+    
     .p_grey {
         grid-template-columns: 50% 50%;
     }
@@ -241,6 +261,9 @@ body {
 
 @media(max-width: 370px) {
 
+    .info{
+        margin-bottom: 24px;
+    }
     .p_grey {
         grid-template-columns: 40% 60%;
     }
