@@ -1,3 +1,61 @@
-<h1>Deine Email ist unterwegs</h1>
+<!DOCTYPE html>
+<html lang="de">
 
-<a href="./index.html"><button>Zurück zur hauptseite</button></a>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chili con Carne</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    
+    <link rel="stylesheet" href="../styles/mail_Successfull.css" />
+
+    <link rel="stylesheet" href="../styles/style_footer.css" />
+    <script src="../header_script.js"></script>
+
+</head>
+
+<body class="content">
+    <div id="header"></div>
+
+    <script>
+        // header laden und einfügen
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <div class="Successfull">
+
+        <H1>E-Mail erfolgreich gesendet</H1>
+
+        <a href="./index.html"><button class="button">Zurück zur Hauptseite</button></a>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Footer laden und einfügen
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+
+
+
+</body>
+<script src="../calculator.js"></script>
+
+</html>
+
