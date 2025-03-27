@@ -286,4 +286,13 @@ body {
     padding-top: 8px;
     padding-bottom: 16px;
   }
+
+  .fourimg{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  #secondpart{
+    height: 100%;
+  }
 }
