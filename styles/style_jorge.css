@@ -355,4 +355,8 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+  input{
+    border-radius: 0;
+  }
 }
