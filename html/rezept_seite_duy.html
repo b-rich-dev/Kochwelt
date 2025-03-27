@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/style_header.css" />
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <script src="../header_script.js"></script>
+    <script src="../duy_calculate.js"></script>
 </head>
 
 
@@ -51,35 +52,48 @@
         <div class="tabelbutton">
             <div class="calculator">
                 <p>Zutaten für</p>
-                <input class="input" min="0" max="20" type="number" placeholder="8">
-                <button class="button">Portionen</button>
+                <input onchange="validateInput(); calculate()" id="input" class="input" min="0" max="20" type="number"
+                    placeholder="1">
+                <button onclick="calculate()" class="button">Portionen</button>
             </div>
             <div class="tabelgrey">
-                <div>200g</div>
+                <div>
+                    <p id="numberOne" data-original="200">200</p>
+                    <p>g</p>
+                </div>
                 <p>Spaghetti</p>
             </div>
             <div class="tabelwhite">
-                <div>100g</div>
+                <div>
+                    <p id="numberTwo" data-original="100">100</p>
+                    <p>g</p>
+                </div>
                 <p>Guanciale 'Schweinebacke'</p>
             </div>
             <div class="tabelgrey">
-                <div>2 </div>
+                <div id="numberThree" data-original="2">2 </div>
                 <p>Eigelbe</p>
             </div>
             <div class="tabelwhite">
-                <div>30g</div>
+                <div>
+                    <p id="numberFour" data-original="30">30</p>
+                    <p>g</p>
+                </div>
                 <p>Pecorino Romano 'frisch gerieben'</p>
             </div>
             <div class="tabelgrey">
-                <div>1 Esslöffel</div>
+                <div>
+                    <div id="numberFive" data-original="1">1 </div>
+                    <p>Esslöffel</p>
+                </div>
                 <p>Olivenöl</p>
             </div>
             <div class="tabelwhite">
-                <div>1 </div>
+                <div></div>
                 <p>Salz</p>
             </div>
             <div class="tabelgrey">
-                <div>1</div>
+                <div></div>
                 <p>Schwarzer Pfeffer 'frisch gemahlen'</p>
             </div>
         </div>
