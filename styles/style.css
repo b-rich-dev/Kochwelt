@@ -287,20 +287,13 @@ body {
     padding-bottom: 16px;
   }
 
-<<<<<<< HEAD
-  .fourimg{
-=======
     .fourimg{
->>>>>>> 5e2824a0061d88f5308da1a03c7df5da7f51b3a1
     flex-direction: column;
     margin-bottom: 20px;
   }
-
+  
   #secondpart{
     height: 100%;
-  }
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> 5e2824a0061d88f5308da1a03c7df5da7f51b3a1
+
