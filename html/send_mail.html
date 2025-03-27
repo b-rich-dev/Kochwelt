@@ -1,3 +1,95 @@
-<h1>Deine Email ist unterwegs</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<a href="./index.html"><button>Zurück zur hauptseite</button></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deine Email ist unterwegs!</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style_footer.css" />
+    <link rel="stylesheet" href="../styles/style_header.css" />
+    <script src="../header_script.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .send_email {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            overflow: auto;
+        }
+
+        .send_email_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grey_bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #EFEFEF;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 24px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .button {
+            height: 42px;
+            width: 240px;
+            background-color: green;
+            color: white;
+            border-width: 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="content">
+
+    <div id="header"></div>
+
+    <script>
+        // header laden und einfügen
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="send_email">
+        <div class="send_email_container">
+            <div class="grey_bar">
+                <h1>Deine Email ist unterwegs!</h1>
+                <a href="./index.html"><button class="button">Zurück zur Hauptseite</button></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+        // Footer laden und einfügen
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    </div>
+
+</body>
+
+</html>
