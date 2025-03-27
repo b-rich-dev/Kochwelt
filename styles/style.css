@@ -34,7 +34,12 @@ body>div {
 }
 
 
-
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 .centert_content {
   max-width: 1440px;
