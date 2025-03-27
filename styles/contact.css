@@ -101,11 +101,22 @@ body {
   object-fit: cover;
 } */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 .second_section {
+  overflow: auto;
   display: flex;
   justify-content: center;
   padding: 300px;
+}
+
+.input{
+  border-width: 1px;
 }
 
 .allbox {
@@ -133,6 +144,7 @@ input {
 textarea {
   height: 200px;
   border-radius: 6px;
+  resize: none;
 
 }
 
@@ -146,7 +158,7 @@ textarea {
 .centermid {
   display: flex;
   justify-content: center;
-  padding: 200px;
+  align-items: center;
 }
 
 

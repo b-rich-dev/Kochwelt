@@ -34,18 +34,18 @@
                 <form onsubmit="sendMail(event)" class="allbox">
                     <label class="box_lineup">
                         Deine Name:
-                        <input type="text" name="text">
+                        <input id="name" type="text" name="text" class="input">
                     </label>
                     <label class="box_lineup">
                         Deine Email:
-                        <input type="email" name="email" required>
+                        <input type="email" id="email" name="email" required  class="input">
                     </label>
                     <label class="lastbox">
                         Deine Nachricht:
-                        <textarea type="message"></textarea>
+                        <textarea type="message" id="message"></textarea>
                     </label>
                     <div class="green">
-                        <button type="Abschicken">Abschicken</button>
+                        <button type="submit">Abschicken</button>
                     </div>
                 </form>
             </div>            
@@ -64,4 +64,5 @@
           });
       </script>
 </body>
+<script src="../contactemail.js"></script>
 </html>
