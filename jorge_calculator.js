@@ -29,7 +29,7 @@ function calculator(y) {                                                    //ä
     let Portion_number = document.getElementById('Portion_number').value;   //holt das Value der portionen
 
 
-    let result = originalValues["x" + y] * Portion_number / 4;                  //rechnet das originalValue[x1-12] mal Portion_Number dur 4 da die orignalzutatenmäne schon für 4 portionen eingetragen wurden
+    let result = originalValues["x" + y] * Portion_number / 1;                  //rechnet das originalValue[x1-12] mal Portion_Number dur 4 da die orignalzutatenmäne schon für 4 portionen eingetragen wurden
     result = parseFloat(result.toFixed(2));                                 // Rundet das ergebniss auf 2 stellen hinter dem komma
     console.log(result);    
 
