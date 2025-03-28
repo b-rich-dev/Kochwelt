@@ -4,152 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezept Seite Eugen</title>
+    <title>Double Burger</title>
     <link rel="icon" type="image/png" href="../img/logo_small.png" />
-    <link rel="stylesheet" href="../styles/style_eugen.css" />
-    <link rel="stylesheet" href="../styles/fonts.css" />
-    <link rel="stylesheet" href="../styles/style_footer.css" />
     <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style_eugen.css" />
     <link rel="stylesheet" href="../styles/content_center.css" />
+    <link rel="stylesheet" href="../styles/style_footer.css" />
     <script src="../header_script.js"></script>
-    <script src="../eugen_calculate.js"></script>
+
 </head>
 
 <body class="content">
-
     <div>
         <div id="header" class="background_full_width box_shadow "></div>
     </div>
 
     <script>
-        // header laden und einfügen
+
         fetch('./header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
             });
+
     </script>
     <div>
-        <div class="centert_content ">
-            <section class="second_section">
-                <div class="container">
-                    <h1>Double Burger</h1>
-                    <img class="burger_img" src="../img/burger.png" alt="Doppelter Burger">
-                    <div class="info">
-                        <div class="grey_iconbox">
-                            <img class="icon" src="../img/icons/clock-regular.svg" alt="Uhr Icon">
-                            <p>15 Min.</p>
-                        </div>
-                        <div class="grey_iconbox">
-                            <img class="icon" src="../img/icons/brain-solid.svg" alt="Gehirn Icon">
-                            <p>Normal</p>
-                        </div>
-                        <div class="grey_iconbox">
-                            <img class="icon" src="../img/icons/calendar-alt-regular.svg" alt="Kalender Icon">
-                            <p>19.03.2025</p>
-                        </div>
-                    </div>
+        <section class="centert_content ">
+            <div class="my_recipe">
+                <h1 id="test">Double Burger</h1>
+                <img class=" my_recipe_atf_img img_round_border" src="../img/burger.png" alt="Doppelter Burger">
+                <div class="my_recipe_tag">
+                    <div><img src="../img/icons/clock-regular.svg" alt=""> 15 Min</div>
+
+                    <div><img src="../img/icons/brain-solid.svg" alt=""> Normal</div>
+
+                    <div><img src="../img/icons/calendar-alt-regular.svg" alt=""> 20.03.2025</div>
                 </div>
-            </section>
-            <section class="third_section">
-                <div id="ingredients_id" class="container_ingredients">
-                    <div class="calculator">
-                        <p>Zutaten für:</p>
-                        <div class="inputandbutton">
-                            <input onchange="validateInput(); calculate()" id="input" class="input" type="number"
-                                min="0" max="20" placeholder="1">
-                            <button onclick="calculate()" class="button">Portionen</button>
-                        </div>
-                    </div>
-                    <div class="p_grey">
-                        <div>
-                            <p id="numberOne" data-original="1">1</data></p>
-                            <p class="distance">große/s</p>
-                        </div>
+
+                <hr>
+
+                <div class="tabel_top">
+                    <div>Zutaten für:</div>
+                    <input
+                        onchange="if (this.value > 30) this.value = 30; if (this.value < 1) this.value = 1; claculate_ingredient(); "
+                        type="number" id="Portion_number" min="1" max="30" value="4">
+                    <button onclick="claculate_ingredient()" class="button">Portionen</button>
+
+
+                </div>
+                <div id="ingredients_id" class="ingredients">
+
+                    <div>
+                        <p id="ingredient_1">4</p>
+                        <p>große/s</p>
                         <p>Bürgerbrötchen</p>
                     </div>
-                    <div class="p_white">
-                        <div>
-                            <p id="numberTwo" data-original="200">200</p>
-                            <p>g</p>
-                        </div>
+                    <div>
+                        <p id="ingredient_2">800</p>
+                        <p>g</p>
                         <p>Rinderhackfleisch</p>
                     </div>
-                    <div class="p_grey">
-                        <div>
-                            <p id="numberThree" data-original="2">2</p>
-                            <p class="distance">Scheiben</p>
-                        </div>
+                    <div>
+                        <p id="ingredient_3">8</p>
+                        <p>Scheiben</p>
                         <p>Bacon</p>
                     </div>
-                    <div class="p_white">
-                        <div>
-                            <p id="numberFour" data-original="2">2</p>
-                            <p class="distance">Scheiben</p>
-                        </div>
+                    <div>
+                        <p id="ingredient_4">8</p>
+                        <p>Scheiben</p>
                         <p>Cheddarkäse</p>
                     </div>
-                    <div class="p_grey">
-                        <div>
-                            <p id="numberFive" data-original="1">1</p>
-                            <p class="distance">m.-große</p>
-                        </div>
+                    <div>
+                        <p id="ingredient_5">4</p>
+                        <p>m.-große</p>
                         <p>Zwiebel</p>
                     </div>
-                    <div class="p_white">
-                        <div>
-                            <p id="numberSix" data-original="2">2</p>
-                            <p class="distance">Scheiben</p>
-                        </div>
+                    <div>
+                        <p id="ingredient_6">2</p>
+                        <p>Scheiben</p>
                         <p>Tomaten</p>
                     </div>
-                    <div class="p_grey">
-                        <div>
-                            <p id="numberSeven" data-original="2">2</p>
-                            <p class="distance">Blätter</p>
-                        </div>
+                    <div>
+                        <p id="ingredient_7">2 </p>
+                        <p>Blätter</p>
                         <p>Salat (Lollo Bionda)</p>
                     </div>
-                    <div class="p_white">
-                        <div></div>
+                    <div>
+                        <p></p>
+                        <p></p>
                         <p>Meersalz</p>
                     </div>
-                    <div class="p_grey">
-                        <div></div>
+                    <div>
+                        <p id=></p>
+                        <p></p>
                         <p>Schwarzer Pfeffer</p>
                     </div>
-                    <div class="p_white">
-                        <div></div>
+                    <div>
+                        <p></p>
+                        <p></p>
                         <p>BBQ-Soße, rauchig</p>
                     </div>
-                    <div class="p_grey">
-                        <div></div>
+                    <div>
+                        <p></p>
+                        <p></p>
                         <p>Sonnenblumenöl</p>
                     </div>
-                    <div class="p_white">
-                        <div>evtl.</div>
+                    <div>
+                        <p>evtl.</p>
+                        <p></p>
                         <p>Butterschmalz</p>
                     </div>
-                    <div class="p_grey">
-                        <div>evtl</div>
+                    <div>
+                        <p>evtl</p>
+                        <p></p>
                         <p>Flüssigrauch</p>
                     </div>
+
                 </div>
-            </section>
-            <section class="fourth_section">
                 <div class="preparation">
                     <h2>Zubereitung</h2>
-                    <div class="info">
-                        <div class="grey_iconbox">
-                            <img class="icon" src="../img/icons/clock-regular.svg" alt="Uhr Icon">
-                            <p>ca. 15 Minuten</p>
+                    <div class="my_recipe_tag">
+                        <div>
+                            <img src="../img/icons/clock-regular.svg" alt="">
+                            ca. 15 min.
                         </div>
-                        <div class="grey_iconbox">
-                            <img class="icon" src="../img/icons/clock-regular.svg" alt="Uhr Icon">
-                            <p>Gesamtzeit ca. 40 Minuten</p>
+
+                        <div>
+                            <img src="../img/icons/clock-regular.svg" alt="">
+                            gesamtzeit ca 40 Min.
                         </div>
                     </div>
-                    <span>Frisches Rinderhackfleisch großzügig mit Salz und Pfeffer würzen, zu zwei Pattys formen (etwas
+                    <span class="preparation_text">Frisches Rinderhackfleisch großzügig mit Salz und Pfeffer würzen, zu
+                        zwei Pattys formen (etwas
                         größer
                         als gewünscht, da sie sich zusammenziehen) und kurz ins Gefrierfach legen. Bei
                         Pfannenzubereitung
@@ -172,14 +159,19 @@
                         <br><br>
                         Tipp: Selbst gebackenes Brötchen und hausgemachte Barbecue-Sauce verbessern das Ergebnis
                     </span>
-                    <h3>Rezept erstellt von</h3>
-                    <div class="profil_container">
-                        <img class="profil_img" src="../img/eugen.jpg" alt="Bild von Eugen">
-                        <p>Eugen</p>
+
+
+                    <div class="creator">Rezept erstellt von </div>
+                    <div class="recipe_signature">
+                        <img src="../img/eugen.jpg" alt="Bild von Eugen">
+                        <div>Eugen</div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+
+
+
+        </section>
     </div>
     <div>
         <div id="footer" class="bg_grey"></div>
@@ -193,9 +185,11 @@
                 document.getElementById('footer').innerHTML = data;
             });
     </script>
-    </div>
+
+
+
 
 </body>
-
+<script src="../calculator.js"></script>
 
 </html>
