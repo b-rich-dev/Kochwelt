@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 a {
   color: black;
   text-decoration: none;
@@ -7,15 +6,6 @@ a {
 
 
 
-=======
-
-a{
-  color: black;
- text-decoration:  none;
-
-}
-
->>>>>>> parent of 353bf85 (new)
 html {
   scroll-behavior: smooth;
   font-family: raleway;
@@ -28,7 +18,6 @@ body {
   padding: 0;
 }
 
-<<<<<<< HEAD
 body>div {
   display: flex;
   justify-content: center;
@@ -62,15 +51,6 @@ body {
 
 
 
-=======
-.aot {
-  display: flex;
-  justify-content: center;
-  height: 75px;
-  box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.2);
-}
-
->>>>>>> parent of 353bf85 (new)
 header {
   display: flex;
   justify-content: space-between;
@@ -111,11 +91,7 @@ header a {
 .recipe_of_the_day {
   display: flex;
   width: 80%;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> parent of 353bf85 (new)
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 10%;
@@ -127,17 +103,10 @@ header a {
 }
 
 .recipe_of_the_day_img {
-<<<<<<< HEAD
 
   width: 50%;
   aspect-ratio: 16/9;
   object-fit: cover;
-=======
- 
- width: 50%;
- aspect-ratio: 16/9;
- object-fit: cover;
->>>>>>> parent of 353bf85 (new)
 
 }
 
@@ -194,11 +163,7 @@ h2 {
 }
 
 #secondpart {
-<<<<<<< HEAD
   width: 100%;
-=======
-  background-color: rgba(240, 240, 240, 0.61);
->>>>>>> parent of 353bf85 (new)
   height: 350px;
   display: flex;
   justify-content: flex-start;
@@ -228,11 +193,7 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> parent of 353bf85 (new)
 }
 
 .wok {
@@ -333,14 +294,9 @@ body {
     flex-direction: column;
     height: auto;
   }
-<<<<<<< HEAD
 
   .recipe_of_the_day img {
     width: 100%;
-=======
-  .recipe_of_the_day img{
-  width: 100%;
->>>>>>> parent of 353bf85 (new)
   }
 
   .recipe_of_the_day_text {
@@ -359,7 +315,6 @@ body {
     padding-bottom: 16px;
   }
 
-<<<<<<< HEAD
   .fourimg {
     flex-direction: column;
     margin-bottom: 20px;
@@ -369,15 +324,3 @@ body {
     height: 100%;
   }
 }
-=======
-    .fourimg{
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  #secondpart{
-    height: 100%;
-}
-}
-
->>>>>>> parent of 353bf85 (new)
