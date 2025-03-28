@@ -35,14 +35,23 @@ body {
   padding: 0;
 }
 
+<<<<<<< HEAD
 /* .aot { Wiesooooooooo man :(
+=======
+.aot {
+>>>>>>> parent of 353bf85 (new)
   display: flex;
   justify-content: center;
   height: 75px;
   box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.2);
 }
+<<<<<<< HEAD
  */
 /* header {
+=======
+
+header {
+>>>>>>> parent of 353bf85 (new)
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -52,7 +61,11 @@ body {
 header a {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> parent of 353bf85 (new)
 
 .logo {
   width: 213px;
@@ -250,13 +263,21 @@ p2{
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 /* .footer_container {
+=======
+.footer_container {
+>>>>>>> parent of 353bf85 (new)
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
  */
+=======
+
+>>>>>>> parent of 353bf85 (new)
 .rth-img {
   height: 80px;
   filter: invert(1);
@@ -275,12 +296,20 @@ body {
   width: 40px;
 }
 
+<<<<<<< HEAD
 /* footer {
+=======
+footer {
+>>>>>>> parent of 353bf85 (new)
   display: flex;
   justify-content: center;
   background-color: #2c2c2c;
   height: 240px;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> parent of 353bf85 (new)
 
 .social-media {
   display: flex;
