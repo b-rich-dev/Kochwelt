@@ -283,21 +283,10 @@ body {
       object-fit: contain;
   }
 
-  #container2 {
-    font-size: 14px;
-  }
-  p{font-size: 14px;}
-  p2 {font-size: 14px;}
-}
-@media(max-width: 360px) {
-
-
-
-  #container2 {
-    font-size: 12px;
-  }
-  p{font-size: 12px;}
-  p2{font-size: 12px;}
+  td {
+    padding-top: 4px;
+    padding-bottom: 4px;
+ 
 }
 
 @media (max-width: 550px){
