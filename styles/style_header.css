@@ -25,6 +25,18 @@ body {
     overflow-x: hidden;
 }
 
+.content_index{
+    width: 100%;
+
+
+    min-height: 100vh;
+
+    position: relative;
+    overflow-x: hidden;
+    grid-template-rows: auto auto auto 1fr auto;
+
+}
+
 .aot {
     display: flex;
     justify-content: center;
