@@ -359,4 +359,8 @@ body {
   input{
     border-radius: 0;
   }
+
+  p5{
+    margin-left: 5px;
+  }
 }
