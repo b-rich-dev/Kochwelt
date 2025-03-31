@@ -48,6 +48,11 @@ body {
         justify-content: space-between;
         width: 80%;
         align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .header_resp_closed{
+        overflow: unset;
     }
 
     header a {
