@@ -234,6 +234,9 @@ p2{
   font-size: 20px;
 }
 
+td div{
+  padding-right: 8px;
+}
 /* .footer_container {
   width: 80%;
   display: flex;

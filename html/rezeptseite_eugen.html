@@ -55,7 +55,7 @@
           <div class="zutatentxt">Zutaten für:</div>
           <input
             onchange="if (this.value > 10) this.value = 10; if (this.value < 1) this.value = 1; claculate_ingredient(); "
-            type="number" id="Portion_number" min="1" max="10" value="1">
+            type="number" id="Portion_number" min="1" max="10" value="4">
           <button onclick="claculate_ingredient()" class="button">Portionen</button>
         </div>
       </section>
@@ -64,12 +64,12 @@
         <table id="ingredients_id">
           <tr>
             <td class="r1">
-              <p id="ingredient_1">4</p>große/s <p> Bürgerbrötchen</p>
+              <p id="ingredient_1">4</p>große/s Bürgerbrötchen</p>
             </td>
           </tr>
           <tr>
             <td class="r2">
-              <p id="ingredient_2">800</p>g Rinderhackfleisch
+              <p id="ingredient_2">800</p><div>g</div> Rinderhackfleisch
             </td>
           </tr>
           <tr>
