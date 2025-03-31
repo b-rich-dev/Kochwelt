@@ -20,7 +20,7 @@
   </div>
 
   <script>
-    
+
     fetch('./header.html')
       .then(response => response.text())
       .then(data => {
@@ -64,22 +64,22 @@
         <table id="ingredients_id">
           <tr>
             <td class="r1">
-              <p id="ingredient_1">20</p>g <p5> Serrano-Schinken (fein gehackt)</p5>
+              <p id="ingredient_1">80</p>g <p5> Serrano-Schinken (fein gehackt)</p5>
             </td>
           </tr>
           <tr>
             <td class="r2">
-              <p id="ingredient_2">10</p>g Butter
+              <p id="ingredient_2">40</p>g Butter
             </td>
           </tr>
           <tr>
             <td class="r1">
-              <p id="ingredient_3">12</p>g Mehl
+              <p id="ingredient_3">48</p>g Mehl
             </td>
           </tr>
           <tr>
             <td class="r2">
-              <p id="ingredient_4">100</p>ml Milch (Zimmerwarm)
+              <p id="ingredient_4">400</p>ml Milch (Zimmerwarm)
             </td>
           </tr>
           <tr>
@@ -90,17 +90,17 @@
           </tr>
           <tr>
             <td class="r1">
-              <p2 id="ingredient_5">1</p2> Eier
+              <p2 id="ingredient_5">4</p2> Eier
             </td>
           </tr>
           <tr>
             <td class="r2">
-              <p id="ingredient_6">25</p>g Paniermehl
+              <p id="ingredient_6">100</p>g Paniermehl
             </td>
           </tr>
           <tr>
             <td class="r1">
-              <p id="ingredient_7">25</p>g Mehl (zum Panieren)
+              <p id="ingredient_7">100</p>g Mehl (zum Panieren)
             </td>
           </tr>
           <tr>
@@ -136,22 +136,22 @@
       </div>
     </div>
   </div>
-      <div>
-        <div id="footer" class="bg_grey"></div>
-      </div>
-    
-
-    <script>
-      // Footer laden und einfügen
-      fetch('./footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer').innerHTML = data;
-        });
-    </script>
+  <div>
+    <div id="footer" class="bg_grey"></div>
   </div>
 
-  
+
+  <script>
+    // Footer laden und einfügen
+    fetch('./footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  </div>
+
+
   <script src="../jorge_calculator.js"></script>
   <script> get_ingredient();
   </script>

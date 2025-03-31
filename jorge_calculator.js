@@ -24,7 +24,7 @@ function claculate_ingredient() {
 
 function calculator(y) {
     let Portion_number = document.getElementById('Portion_number').value;
-    let result = originalValues["x" + y] * Portion_number / 1;
+    let result = originalValues["x" + y] * Portion_number / 4;
     result = parseFloat(result.toFixed(2));
     object["x" + y].innerText = result;
 
