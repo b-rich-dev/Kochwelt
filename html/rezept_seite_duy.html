@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="calculaor.js">
     <link rel="stylesheet" href="../styles/style_footer.css" />
     <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../styles/content_center.css" />
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <script src="../header_script.js"></script>
     <script src="../duy_calculate.js"></script>
@@ -18,7 +19,9 @@
 
 <body class="content">
 
-    <div id="header"></div>
+    <div>
+        <div id="header" class="background_full_width box_shadow "></div>
+    </div>
 
     <script>
         // header laden und einfügen
@@ -28,133 +31,140 @@
                 document.getElementById('header').innerHTML = data;
             });
     </script>
-
-    <section class="one">
-        <div class="bigimg">
-            <h1>Carbonara</h1>
-            <img class="teller_img" src="../img/carbonarahappy.jpg" alt="">
-            <div class="pic">
-                <div class="midbox">
-                    <img class="grey_box" src="./img/clock-regular.svg" alt="">
-                    45min.
+   <!--  <div>
+        <div class="content_center"> -->
+            <section class="one">
+                <div class="bigimg">
+                    <h1>Carbonara</h1>
+                    <img class="teller_img" src="../img/carbonarahappy.jpg" alt="">
+                    <div class="pic">
+                        <div class="midbox">
+                            <img class="grey_box" src="./img/clock-regular.svg" alt="">
+                            45min.
+                        </div>
+                        <div class="midbox">
+                            <img class="grey_box" src="./img/brain-solid.svg" alt="">
+                            simpel
+                        </div>
+                        <div class="midbox">
+                            <img class="grey_box" src="./img/calendar-alt-regular.svg" alt="">
+                            21.03.2025
+                        </div>
+                    </div>
+            </section>
+            <section class="tabel">
+                <div class="tabelbutton">
+                    <div class="calculator">
+                        <p>Zutaten für</p>
+                        <input onchange="validateInput(); calculate()" id="input" class="input" min="0" max="20"
+                            type="number" placeholder="1">
+                        <button onclick="calculate()" class="button">Portionen</button>
+                    </div>
+                    <div class="tabelgrey">
+                        <div>
+                            <p id="numberOne" data-original="200">200</p>
+                            <p>g</p>
+                        </div>
+                        <p>Spaghetti</p>
+                    </div>
+                    <div class="tabelwhite">
+                        <div>
+                            <p id="numberTwo" data-original="100">100</p>
+                            <p>g</p>
+                        </div>
+                        <p>Guanciale 'Schweinebacke'</p>
+                    </div>
+                    <div class="tabelgrey">
+                        <div id="numberThree" data-original="2">2 </div>
+                        <p>Eigelbe</p>
+                    </div>
+                    <div class="tabelwhite">
+                        <div>
+                            <p id="numberFour" data-original="30">30</p>
+                            <p>g</p>
+                        </div>
+                        <p>Pecorino Romano 'frisch gerieben'</p>
+                    </div>
+                    <div class="tabelgrey">
+                        <div>
+                            <div id="numberFive" data-original="1">1 </div>
+                            <p>Esslöffel</p>
+                        </div>
+                        <p>Olivenöl</p>
+                    </div>
+                    <div class="tabelwhite">
+                        <div></div>
+                        <p>Salz</p>
+                    </div>
+                    <div class="tabelgrey">
+                        <div></div>
+                        <p>Schwarzer Pfeffer 'frisch gemahlen'</p>
+                    </div>
                 </div>
-                <div class="midbox">
-                    <img class="grey_box" src="./img/brain-solid.svg" alt="">
-                    simpel
+            </section>
+            <section class="two">
+                <div class="pre">
+                    <h2>Zubereitung</h2>
+                    <div class="description">
+                        <div class="bottombox">
+                            <img class="grey_box" src="./img/clock-regular.svg" alt="">
+                            ca. 15 Minuten.
+                        </div>
+                        <div class="bottombox">
+                            <img class="grey_box" src="./img/clock-regular.svg" alt="">
+                            Gesamtzeit ca. 40 Minuten
+                        </div>
+                    </div>
+                    <span>
+                        1. Wasser für die Pasta aufsetzen:
+                        Einen großen Topf mit Wasser zum Kochen bringen und großzügig salzen.
+                        <br>
+                        <br>
+                        2. Guanciale vorbereiten:
+                        Den Guanciale in kleine Streifen oder Würfel schneiden und in einer kalten Pfanne ohne Öl bei
+                        mittlerer
+                        Hitze auslassen, bis er goldbraun und knusprig ist.
+                        Das Fett in der Pfanne lassen, die Pfanne vom Herd nehmen.
+                        <br>
+                        <br>
+                        Das Fett in der Pfanne lassen, die Pfanne vom Herd nehmen.
+                        3. Eier und Käse mischen:
+                        In einer Schüssel die Eigelbe mit dem geriebenen Pecorino Romano und reichlich frisch gemahlenem
+                        schwarzem Pfeffer vermengen.
+                        <br>
+                        <br>
+                        4. Spaghetti kochen:
+                        Die Spaghetti al dente kochen, dann mit einer Zange direkt aus dem Kochwasser in die Pfanne mit
+                        dem
+                        Guanciale geben.
+                        Etwas Pastawasser (ca. 3 EL) hinzufügen und gut vermengen.
+                        <br>
+                        <br>
+                        5. Carbonara-Soße zubereiten:
+                        Die Pfanne vom Herd nehmen und die Ei-Käse-Mischung unter ständigem Rühren mit der heißen Pasta
+                        vermengen.
+                        Falls nötig, noch etwas Pastawasser hinzufügen, damit eine cremige Konsistenz entsteht.
+                        <br>
+                        <br>
+                        6. Servieren:
+                        Die Spaghetti Carbonara sofort auf Tellern anrichten und mit extra Pecorino und Pfeffer
+                        bestreuen.
+                        <br>
+                        <br>
+                        Buon appetito!
+                    </span>
                 </div>
-                <div class="midbox">
-                    <img class="grey_box" src="./img/calendar-alt-regular.svg" alt="">
-                    21.03.2025
+                <h3>Rezept erstellt von</h3>
+                <div class="profil_container">
+                    <img class="profil_img" src="../img/duy.jpg" alt="Bild von Eugen">
+                    <p>Duy</p>
                 </div>
-            </div>
-    </section>
-    <section class="tabel">
-        <div class="tabelbutton">
-            <div class="calculator">
-                <p>Zutaten für</p>
-                <input onchange="validateInput(); calculate()" id="input" class="input" min="0" max="20" type="number"
-                    placeholder="1">
-                <button onclick="calculate()" class="button">Portionen</button>
-            </div>
-            <div class="tabelgrey">
-                <div>
-                    <p id="numberOne" data-original="200">200</p>
-                    <p>g</p>
-                </div>
-                <p>Spaghetti</p>
-            </div>
-            <div class="tabelwhite">
-                <div>
-                    <p id="numberTwo" data-original="100">100</p>
-                    <p>g</p>
-                </div>
-                <p>Guanciale 'Schweinebacke'</p>
-            </div>
-            <div class="tabelgrey">
-                <div id="numberThree" data-original="2">2 </div>
-                <p>Eigelbe</p>
-            </div>
-            <div class="tabelwhite">
-                <div>
-                    <p id="numberFour" data-original="30">30</p>
-                    <p>g</p>
-                </div>
-                <p>Pecorino Romano 'frisch gerieben'</p>
-            </div>
-            <div class="tabelgrey">
-                <div>
-                    <div id="numberFive" data-original="1">1 </div>
-                    <p>Esslöffel</p>
-                </div>
-                <p>Olivenöl</p>
-            </div>
-            <div class="tabelwhite">
-                <div></div>
-                <p>Salz</p>
-            </div>
-            <div class="tabelgrey">
-                <div></div>
-                <p>Schwarzer Pfeffer 'frisch gemahlen'</p>
-            </div>
-        </div>
-    </section>
-    <section class="two">
-        <div class="pre">
-            <h2>Zubereitung</h2>
-            <div class="description">
-                <div class="bottombox">
-                    <img class="grey_box" src="./img/clock-regular.svg" alt="">
-                    ca. 15 Minuten.
-                </div>
-                <div class="bottombox">
-                    <img class="grey_box" src="./img/clock-regular.svg" alt="">
-                    Gesamtzeit ca. 40 Minuten
-                </div>
-            </div>
-            <span>
-                1. Wasser für die Pasta aufsetzen:
-                Einen großen Topf mit Wasser zum Kochen bringen und großzügig salzen.
-                <br>
-                <br>
-                2. Guanciale vorbereiten:
-                Den Guanciale in kleine Streifen oder Würfel schneiden und in einer kalten Pfanne ohne Öl bei mittlerer
-                Hitze auslassen, bis er goldbraun und knusprig ist.
-                Das Fett in der Pfanne lassen, die Pfanne vom Herd nehmen.
-                <br>
-                <br>
-                Das Fett in der Pfanne lassen, die Pfanne vom Herd nehmen.
-                3. Eier und Käse mischen:
-                In einer Schüssel die Eigelbe mit dem geriebenen Pecorino Romano und reichlich frisch gemahlenem
-                schwarzem Pfeffer vermengen.
-                <br>
-                <br>
-                4. Spaghetti kochen:
-                Die Spaghetti al dente kochen, dann mit einer Zange direkt aus dem Kochwasser in die Pfanne mit dem
-                Guanciale geben.
-                Etwas Pastawasser (ca. 3 EL) hinzufügen und gut vermengen.
-                <br>
-                <br>
-                5. Carbonara-Soße zubereiten:
-                Die Pfanne vom Herd nehmen und die Ei-Käse-Mischung unter ständigem Rühren mit der heißen Pasta
-                vermengen.
-                Falls nötig, noch etwas Pastawasser hinzufügen, damit eine cremige Konsistenz entsteht.
-                <br>
-                <br>
-                6. Servieren:
-                Die Spaghetti Carbonara sofort auf Tellern anrichten und mit extra Pecorino und Pfeffer bestreuen.
-                <br>
-                <br>
-                Buon appetito!
-            </span>
-        </div>
-        <h3>Rezept erstellt von</h3>
-        <div class="profil_container">
-            <img class="profil_img" src="../img/duy.jpg" alt="Bild von Eugen">
-            <p>Duy</p>
-        </div>
-    </section>
-
-    <div id="footer"></div>
+            </section>
+      <!--   </div>
+    </div> -->
+    <div>
+        <div id="footer" class="bg_grey"></div>
+    </div>
 
     <script>
         // Footer laden und einfügen

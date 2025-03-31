@@ -159,6 +159,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+  height: 100%;
 }
 
 
@@ -202,6 +204,7 @@ button {
   border-radius: 12px;
   height: 505px;
   width: 400px;
+  margin: 40px;
 }
 
 @media(max-width:4000px) {
